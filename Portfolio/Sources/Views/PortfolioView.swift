@@ -11,19 +11,25 @@ struct PortfolioView: View {
     var mainModel = MainModel()
     
     var body: some View {
-        HStack(spacing: 20) {
-            Spacer()
-            ForEach(mainModel.socials, id: \.url) { social in
-                SocialMediaView(iconName: social.image, url: social.url)
-            }
-            Spacer()
-                .frame(width: 8)
-        }
-        ZStack {
-            ScrollView(.vertical) {
-                VStack {
-                    HeaderView(mainModel: mainModel)
+        VStack(spacing: 0) {
+            HStack(spacing: 20) {
+                Spacer()
+                ForEach(mainModel.socials, id: \.url) { social in
+                    SocialMediaView(iconName: social.image, url: social.url)
                 }
+                Spacer()
+                    .frame(width: 8)
+            }
+            .padding(.vertical, 10)
+            .background(Color.white)
+            .shadow(radius: 5)
+            
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(alignment: .leading, spacing: 8) {
+                    HeaderView(mainModel: mainModel)
+                    ExpandableExperienceView(experiences: mainModel.experiences)
+                }
+                .padding(.top, 10)
             }
         }
     }
