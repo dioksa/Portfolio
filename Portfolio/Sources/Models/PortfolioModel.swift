@@ -5,8 +5,15 @@
 //  Created by Oksana Dionisieva on 20.01.2025.
 //
 
-struct Experience {
-    
+import Foundation
+
+struct Experience: Identifiable {
+    let id: UUID = UUID()
+    let position: String
+    let company: String
+    let country: String
+    let period: String
+    let projects: [Project]
 }
 
 struct Skill {
@@ -31,5 +38,4 @@ struct PortfolioItem {
     let socials: [Social]
     let experiences: [Experience]
     let skills: [Skill]
-    let projects: [Project]
 }
