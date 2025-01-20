@@ -18,7 +18,8 @@ struct Project {
 }
 
 struct Social {
-    
+    let image: String
+    let url: String
 }
 
 struct PortfolioItem {

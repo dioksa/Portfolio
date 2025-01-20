@@ -33,7 +33,6 @@ struct HeaderView: View {
                 Text(mainModel.portfolio.location)
                     .font(.subheadline)
             }
-
         }
     }
 }
