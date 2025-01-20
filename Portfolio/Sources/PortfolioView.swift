@@ -11,17 +11,16 @@ struct PortfolioView: View {
     var mainModel = MainModel()
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            ScrollView(.vertical) {
+                VStack {
+                    HeaderView(mainModel: mainModel)
+                }
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
     PortfolioView()
-        .colorScheme(.dark)
 }
