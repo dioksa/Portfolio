@@ -7,19 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00952A8207EBBD07B4539E40 /* Pods_Portfolio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A707DD1B2AD00599D62CCC /* Pods_Portfolio.framework */; };
+		3E3CFD35D8FD8904E0407BE8 /* Pods_Portfolio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521470E92FBCBC3AF4893DBA /* Pods_Portfolio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E49D6DD2D3E83FE00D7273F /* Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8053625D6195CA01EDCE7D7E /* Pods-Portfolio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portfolio.release.xcconfig"; path = "Target Support Files/Pods-Portfolio/Pods-Portfolio.release.xcconfig"; sourceTree = "<group>"; };
-		B7A707DD1B2AD00599D62CCC /* Pods_Portfolio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Portfolio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E20EA117B965ACCD332AAE5C /* Pods-Portfolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portfolio.debug.xcconfig"; path = "Target Support Files/Pods-Portfolio/Pods-Portfolio.debug.xcconfig"; sourceTree = "<group>"; };
+		521470E92FBCBC3AF4893DBA /* Pods_Portfolio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Portfolio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E37354D6B64AA7A86B9E031B /* Pods-Portfolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portfolio.debug.xcconfig"; path = "Target Support Files/Pods-Portfolio/Pods-Portfolio.debug.xcconfig"; sourceTree = "<group>"; };
+		F1D7AD9BA42DE82DBCA7F557 /* Pods-Portfolio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portfolio.release.xcconfig"; path = "Target Support Files/Pods-Portfolio/Pods-Portfolio.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1E83D7542D3F8A40005FC1D2 /* Exceptions for "Portfolio" folder in "Portfolio" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1E49D6DC2D3E83FE00D7273F /* Portfolio */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1E49D6DF2D3E83FE00D7273F /* Portfolio */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1E83D7542D3F8A40005FC1D2 /* Exceptions for "Portfolio" folder in "Portfolio" target */,
+			);
 			path = Portfolio;
 			sourceTree = "<group>";
 		};
@@ -30,37 +43,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00952A8207EBBD07B4539E40 /* Pods_Portfolio.framework in Frameworks */,
+				3E3CFD35D8FD8904E0407BE8 /* Pods_Portfolio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04B1D8E141A32CFD65385888 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E20EA117B965ACCD332AAE5C /* Pods-Portfolio.debug.xcconfig */,
-				8053625D6195CA01EDCE7D7E /* Pods-Portfolio.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		0A9BD6E02F2868C8A93E118D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B7A707DD1B2AD00599D62CCC /* Pods_Portfolio.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		1E49D6D42D3E83FE00D7273F = {
 			isa = PBXGroup;
 			children = (
 				1E49D6DF2D3E83FE00D7273F /* Portfolio */,
 				1E49D6DE2D3E83FE00D7273F /* Products */,
-				04B1D8E141A32CFD65385888 /* Pods */,
-				0A9BD6E02F2868C8A93E118D /* Frameworks */,
+				3111F928CA1DF2B39007EFDF /* Pods */,
+				E2FAB24C6D66B340BF297852 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +66,23 @@
 				1E49D6DD2D3E83FE00D7273F /* Portfolio.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3111F928CA1DF2B39007EFDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E37354D6B64AA7A86B9E031B /* Pods-Portfolio.debug.xcconfig */,
+				F1D7AD9BA42DE82DBCA7F557 /* Pods-Portfolio.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E2FAB24C6D66B340BF297852 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				521470E92FBCBC3AF4893DBA /* Pods_Portfolio.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,15 +310,17 @@
 		};
 		1E49D6EC2D3E83FF00D7273F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E20EA117B965ACCD332AAE5C /* Pods-Portfolio.debug.xcconfig */;
+			baseConfigurationReference = E37354D6B64AA7A86B9E031B /* Pods-Portfolio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Portfolio/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Portfolio/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -327,15 +342,17 @@
 		};
 		1E49D6ED2D3E83FF00D7273F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8053625D6195CA01EDCE7D7E /* Pods-Portfolio.release.xcconfig */;
+			baseConfigurationReference = F1D7AD9BA42DE82DBCA7F557 /* Pods-Portfolio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Portfolio/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Portfolio/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
