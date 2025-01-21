@@ -25,9 +25,9 @@ struct HeaderView: View {
             }
 
             Text(mainModel.portfolio.name)
-                .font(.headline)
+                .font(FontStyle.regularLobster.font(size: .h24))
             Text(mainModel.portfolio.position)
-                .font(.subheadline)
+                .font(FontStyle.regular.font(size: .h16))
             
             HStack {
                 Image(.locationIcon)
@@ -35,7 +35,7 @@ struct HeaderView: View {
                     .frame(width: 24, height: 24)
                     .aspectRatio(contentMode: .fit)
                 Text(mainModel.portfolio.location)
-                    .font(.subheadline)
+                    .font(FontStyle.regular.font(size: .h16))
             }
         }
     }

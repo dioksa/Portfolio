@@ -14,21 +14,22 @@ struct ExperienceView: View {
         VStack(alignment: .leading) {
             Circle()
                 .frame(width: 10, height: 10)
-                .opacity(0.2)
+                .foregroundColor(Color.gin)
             
             HStack {
                 RoundedRectangle(cornerRadius: 8)
                     .frame(width: 3)
                     .padding(.leading, 3)
+                    .foregroundColor(Color.eucalyptus)
                 
                 VStack(alignment: .leading) {
                     Text(experience.position)
-                        .font(.headline)
+                        .font(FontStyle.bold.font(size: .h20))
                     Text("\(experience.company), \(experience.country)")
-                        .font(.subheadline)
+                        .font(FontStyle.regular.font(size: .h18))
                         .padding(.bottom, 4)
                     Text(experience.period)
-                        .font(.footnote)
+                        .font(FontStyle.light.font(size: .h16))
                         .opacity(0.4)
                 }
                 .padding(.leading, 16)
