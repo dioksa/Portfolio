@@ -72,5 +72,8 @@ fastlane/README.md
 bundle
 .bundle
 *.xcuserstate
-TopNewsApp/TopNewsApp.xcodeproj/project.xcworkspace/xcuserdata/dioksa.xcuserdatad/UserInterfaceState.xcuserstate
+Portfoliop/Portfolio.xcodeproj/project.xcworkspace/xcuserdata/dioksa.xcuserdatad/UserInterfaceState.xcuserstate
 *.xcuserstate
+Portfolio.xcodeproj/project.xcworkspace/xcuserdata/dioksa.xcuserdatad/UserInterfaceState.xcuserstate
+Portfolio.xcworkspace/xcuserdata/dioksa.xcuserdatad/UserInterfaceState.xcuserstate
+.DS_Store
