@@ -25,9 +25,10 @@ struct PortfolioView: View {
             .shadow(radius: 5)
             
             ScrollView(.vertical, showsIndicators: false) {
-                VStack(alignment: .leading, spacing: 8) {
+                VStack(alignment: .leading) {
                     HeaderView(mainModel: mainModel)
                     ExpandableExperienceView(experiences: mainModel.experiences)
+                    ExpandableSkillView(skills: mainModel.skills)
                 }
                 .padding(.top, 10)
             }

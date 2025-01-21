@@ -1,20 +1,20 @@
 //
-//  ExpandableExperienceView.swift
+//  ExpandableSkillView.swift
 //  Portfolio
 //
-//  Created by Oksana Dionisieva on 20.01.2025.
+//  Created by Oksana Dionisieva on 21.01.2025.
 //
 
 import SwiftUI
 
-struct ExpandableExperienceView: View {
-    var experiences: [Experience]
+struct ExpandableSkillView: View {
+    var skills: [Skill]
     @State var isExpanded: Bool = true
 
     var body: some View {
         VStack(alignment: .leading) {
             HStack(spacing: 16) {
-                Text("Work experience")
+                Text("My skills")
                     .font(FontStyle.lightItalic.font(size: .h24))
                     
                 Button {
@@ -30,8 +30,10 @@ struct ExpandableExperienceView: View {
             }
             
             if isExpanded {
-                ForEach(experiences) { experience in
-                    ExperienceView(experience: experience)
+                LazyVGrid(columns: [GridItem(), GridItem(), GridItem()], alignment: .center, spacing: 12) {
+                    ForEach(skills) { skill in
+                        SkillView(skill: skill)
+                    }
                 }
             }
         }.padding(24)
@@ -39,5 +41,5 @@ struct ExpandableExperienceView: View {
 }
 
 #Preview {
-    ExpandableExperienceView(experiences: MainModel().experiences)
+    ExpandableSkillView(skills: MainModel().skills)
 }

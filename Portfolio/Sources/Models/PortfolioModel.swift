@@ -16,8 +16,10 @@ struct Experience: Identifiable {
     let projects: [Project]
 }
 
-struct Skill {
-    
+struct Skill: Identifiable {
+    let id: UUID = UUID()
+    let title: String
+    let persentage: Int
 }
 
 struct Project {
